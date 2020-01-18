@@ -1,12 +1,13 @@
 {
-    "name": "agespinosa/sf5-expenses-api",
-    "description": "SYMFOMY 5 WITH PHP 7.4 AND API-PLATFORM",
+    "name": "juanwilde/sf5-expenses-api",
+    "description": "Symfony 5 with PHP 7.4 and API Platform",
     "type": "project",
     "license": "proprietary",
     "require": {
         "php": "^7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-json": "*",
         "lexik/jwt-authentication-bundle": "^2.6",
         "ramsey/uuid-doctrine": "^1.5",
         "symfony/console": "5.0.*",
