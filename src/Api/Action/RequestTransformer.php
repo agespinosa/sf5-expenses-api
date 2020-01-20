@@ -20,7 +20,10 @@ class RequestTransformer
         $request->request->replace($data);
     }
 
-    public static function getRequiredField(Request $request, string $fieldName, bool $isArray = false): string
+    /**
+     * @return mixed
+     */
+    public static function getRequiredField(Request $request, string $fieldName, bool $isArray = false)
     {
         $requestData = \json_decode($request->getContent(), true);
 
@@ -41,6 +44,7 @@ class RequestTransformer
 
         throw new BadRequestHttpException(\sprintf('Missing POST field %s', $fieldName));
     }
+
 
     private static function arrayFlatten(array $array): array
     {
